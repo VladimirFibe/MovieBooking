@@ -13,6 +13,7 @@
 		E8803B712A532369007BBD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8803B702A532369007BBD7A /* Assets.xcassets */; };
 		E8803B752A532369007BBD7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8803B742A532369007BBD7A /* Preview Assets.xcassets */; };
 		E8803B7D2A532485007BBD7A /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8803B7C2A532485007BBD7A /* TicketView.swift */; };
+		E8803B812A532976007BBD7A /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8803B802A532976007BBD7A /* cover.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E8803B762A532369007BBD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8803B7C2A532485007BBD7A /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		E8803B7E2A5327F8007BBD7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8803B802A532976007BBD7A /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				E8803B7E2A5327F8007BBD7A /* README.md */,
+				E8803B7F2A532963007BBD7A /* img */,
 				E8803B692A532367007BBD7A /* MovieBooking */,
 				E8803B682A532367007BBD7A /* Products */,
 			);
@@ -77,6 +80,14 @@
 				E8803B742A532369007BBD7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8803B7F2A532963007BBD7A /* img */ = {
+			isa = PBXGroup;
+			children = (
+				E8803B802A532976007BBD7A /* cover.jpg */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8803B812A532976007BBD7A /* cover.jpg in Resources */,
 				E8803B752A532369007BBD7A /* Preview Assets.xcassets in Resources */,
 				E8803B712A532369007BBD7A /* Assets.xcassets in Resources */,
 			);
@@ -301,7 +313,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fibeapp.MovieBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -340,7 +352,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fibeapp.MovieBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
