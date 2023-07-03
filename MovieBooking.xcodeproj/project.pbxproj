@@ -12,6 +12,7 @@
 		E8803B6F2A532367007BBD7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8803B6E2A532367007BBD7A /* ContentView.swift */; };
 		E8803B712A532369007BBD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8803B702A532369007BBD7A /* Assets.xcassets */; };
 		E8803B752A532369007BBD7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8803B742A532369007BBD7A /* Preview Assets.xcassets */; };
+		E8803B7D2A532485007BBD7A /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8803B7C2A532485007BBD7A /* TicketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		E8803B722A532369007BBD7A /* MovieBooking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MovieBooking.entitlements; sourceTree = "<group>"; };
 		E8803B742A532369007BBD7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8803B762A532369007BBD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8803B7C2A532485007BBD7A /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		E8803B7E2A5327F8007BBD7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 		E8803B5E2A532367007BBD7A = {
 			isa = PBXGroup;
 			children = (
+				E8803B7E2A5327F8007BBD7A /* README.md */,
 				E8803B692A532367007BBD7A /* MovieBooking */,
 				E8803B682A532367007BBD7A /* Products */,
 			);
@@ -62,6 +66,7 @@
 				E8803B722A532369007BBD7A /* MovieBooking.entitlements */,
 				E8803B762A532369007BBD7A /* Info.plist */,
 				E8803B732A532369007BBD7A /* Preview Content */,
+				E8803B7C2A532485007BBD7A /* TicketView.swift */,
 			);
 			path = MovieBooking;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				E8803B6D2A532367007BBD7A /* Item.swift in Sources */,
 				E8803B6B2A532367007BBD7A /* MovieBookingApp.swift in Sources */,
+				E8803B7D2A532485007BBD7A /* TicketView.swift in Sources */,
 				E8803B6F2A532367007BBD7A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
