@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E83415632A539BCD00B4B520 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83415622A539BCD00B4B520 /* Ticket.swift */; };
+		E834156A2A53A1BF00B4B520 /* TicketCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83415692A53A1BF00B4B520 /* TicketCard.swift */; };
+		E834156C2A53C5AB00B4B520 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834156B2A53C5AB00B4B520 /* Utilities.swift */; };
 		E8803B6B2A532367007BBD7A /* MovieBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8803B6A2A532367007BBD7A /* MovieBookingApp.swift */; };
 		E8803B6D2A532367007BBD7A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8803B6C2A532367007BBD7A /* Item.swift */; };
 		E8803B6F2A532367007BBD7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8803B6E2A532367007BBD7A /* ContentView.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E83415622A539BCD00B4B520 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		E83415692A53A1BF00B4B520 /* TicketCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCard.swift; sourceTree = "<group>"; };
+		E834156B2A53C5AB00B4B520 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E8803B672A532367007BBD7A /* MovieBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8803B6A2A532367007BBD7A /* MovieBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookingApp.swift; sourceTree = "<group>"; };
 		E8803B6C2A532367007BBD7A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -41,6 +47,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E834155F2A539BB300B4B520 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8803B6C2A532367007BBD7A /* Item.swift */,
+				E83415622A539BCD00B4B520 /* Ticket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E83415642A539C0A00B4B520 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E83415652A539C1D00B4B520 /* Tickets */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E83415652A539C1D00B4B520 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				E83415682A53A1A800B4B520 /* Card */,
+				E8803B7C2A532485007BBD7A /* TicketView.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		E83415662A539C4400B4B520 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8803B6E2A532367007BBD7A /* ContentView.swift */,
+				E834156B2A53C5AB00B4B520 /* Utilities.swift */,
+				E8803B702A532369007BBD7A /* Assets.xcassets */,
+				E8803B722A532369007BBD7A /* MovieBooking.entitlements */,
+				E8803B762A532369007BBD7A /* Info.plist */,
+				E8803B732A532369007BBD7A /* Preview Content */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E83415672A539C6400B4B520 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8803B6A2A532367007BBD7A /* MovieBookingApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E83415682A53A1A800B4B520 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				E83415692A53A1BF00B4B520 /* TicketCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		E8803B5E2A532367007BBD7A = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +123,10 @@
 		E8803B692A532367007BBD7A /* MovieBooking */ = {
 			isa = PBXGroup;
 			children = (
-				E8803B6A2A532367007BBD7A /* MovieBookingApp.swift */,
-				E8803B6C2A532367007BBD7A /* Item.swift */,
-				E8803B6E2A532367007BBD7A /* ContentView.swift */,
-				E8803B702A532369007BBD7A /* Assets.xcassets */,
-				E8803B722A532369007BBD7A /* MovieBooking.entitlements */,
-				E8803B762A532369007BBD7A /* Info.plist */,
-				E8803B732A532369007BBD7A /* Preview Content */,
-				E8803B7C2A532485007BBD7A /* TicketView.swift */,
+				E83415662A539C4400B4B520 /* Supporting Files */,
+				E83415642A539C0A00B4B520 /* Features */,
+				E834155F2A539BB300B4B520 /* Model */,
+				E83415672A539C6400B4B520 /* App */,
 			);
 			path = MovieBooking;
 			sourceTree = "<group>";
@@ -161,10 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83415632A539BCD00B4B520 /* Ticket.swift in Sources */,
 				E8803B6D2A532367007BBD7A /* Item.swift in Sources */,
+				E834156C2A53C5AB00B4B520 /* Utilities.swift in Sources */,
 				E8803B6B2A532367007BBD7A /* MovieBookingApp.swift in Sources */,
 				E8803B7D2A532485007BBD7A /* TicketView.swift in Sources */,
 				E8803B6F2A532367007BBD7A /* ContentView.swift in Sources */,
+				E834156A2A53A1BF00B4B520 /* TicketCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
