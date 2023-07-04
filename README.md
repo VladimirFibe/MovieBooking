@@ -3,3 +3,4 @@
 ![](img/cover.jpg)
 
 -[figma](https://www.figma.com/community/file/1102953368834419129/Movie-Ticket-Booking-App-Design)
+-[youtube](https://youtu.be/EkcKeGQm3_U)
