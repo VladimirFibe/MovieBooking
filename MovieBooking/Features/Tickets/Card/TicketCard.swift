@@ -1,23 +1,24 @@
 import SwiftUI
 
 struct TicketCard: View {
-    var title: String
+    let ticket: Ticket
     let gradient: [Color] = [.movieCyan, .clear, .clear]
     var body: some View {
         VStack(spacing: 0.0) {
             VStack(spacing: 4.0) {
-                Text(title).fontWeight(.bold)
+                Text(ticket.title).fontWeight(.bold)
+                Text(ticket.subtitle)
             }
             .padding(EdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30 ))
             .frame(width: 250, height: 325, alignment: .top)
             .foregroundStyle(.white)
             .background(
-                Image(.thorTop)
+                Image("\(ticket.image)-top")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             )
             .mask {
-                Image(.thorTop)
+                Image("\(ticket.image)-top")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             }
@@ -50,12 +51,12 @@ struct TicketCard: View {
             .frame(width: 250, height: 135, alignment: .top)
             .background(.ultraThinMaterial)
             .background(
-                Image(.thorBottom)
+                Image("\(ticket.image)-bottom")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             )
             .mask(
-                Image(.thorBottom)
+                Image("\(ticket.image)-bottom")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             )
@@ -81,5 +82,5 @@ struct BottonTicketItem: View {
 }
 
 #Preview {
-    TicketCard(title: "Thor")
+    TicketCard(ticket: Ticket.tickets[0])
 }
